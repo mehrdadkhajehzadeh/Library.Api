@@ -1,6 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System;
+﻿// See https://aka.ms/new-console-template for more information
+using FluentMigrator.Runner;
+using Microsoft.Extensions.DependencyInjection;
 
+//Console.WriteLine("Hello, World!");
 class Runner
 {
     static void Main(string[] args)
@@ -23,10 +25,10 @@ class Runner
             // Add common FluentMigrator services
             .AddFluentMigratorCore()
             .ConfigureRunner(rb => rb
-                // Add SQLite support to FluentMigrator
-                .AddSQLServer()
+                // Add SQLServer support to FluentMigrator
+                .AddSqlServer()
                 // Set the connection string
-                .WithGlobalConnectionString("Data Source=test.db")
+                .WithGlobalConnectionString("Server=MEHRDAD;Initial Catalog=LibraryDb;User Id=sa;Password=Mehrdad;Trusted_Connection=True;TrustServerCertificate=True;")
                 // Define the assembly containing the migrations
                 .ScanIn(typeof(Runner).Assembly).For.Migrations())
             // Enable logging to console in the FluentMigrator way
@@ -47,3 +49,4 @@ class Runner
         runner.MigrateUp();
     }
 }
+

@@ -1,32 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Novin\\source\\repos\\Library.Api\\Library.Migration\\Library.Migration.csproj": {}
+    "F:\\Job-programing\\Taav Sys Course\\Mehrdad\\LibraryManage.API\\Library.Api\\Library.Migration\\Library.Migration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Novin\\source\\repos\\Library.Api\\Library.Migration\\Library.Migration.csproj": {
+    "F:\\Job-programing\\Taav Sys Course\\Mehrdad\\LibraryManage.API\\Library.Api\\Library.Migration\\Library.Migration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Novin\\source\\repos\\Library.Api\\Library.Migration\\Library.Migration.csproj",
+        "projectUniqueName": "F:\\Job-programing\\Taav Sys Course\\Mehrdad\\LibraryManage.API\\Library.Api\\Library.Migration\\Library.Migration.csproj",
         "projectName": "Library.Migration",
-        "projectPath": "C:\\Users\\Novin\\source\\repos\\Library.Api\\Library.Migration\\Library.Migration.csproj",
-        "packagesPath": "C:\\Users\\Novin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Novin\\source\\repos\\Library.Api\\Library.Migration\\obj\\",
+        "projectPath": "F:\\Job-programing\\Taav Sys Course\\Mehrdad\\LibraryManage.API\\Library.Api\\Library.Migration\\Library.Migration.csproj",
+        "packagesPath": "C:\\Users\\Saeed\\.nuget\\packages\\",
+        "outputPath": "F:\\Job-programing\\Taav Sys Course\\Mehrdad\\LibraryManage.API\\Library.Api\\Library.Migration\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Novin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Saeed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,18 +42,16 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "FluentMigrator": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[5.0.0, )"
             },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "FluentMigrator.Runner": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -67,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.411\\RuntimeIdentifierGraph.json"
         }
       }
     }
